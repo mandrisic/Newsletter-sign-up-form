@@ -36,6 +36,15 @@ form {
         border-radius: .5em;
         border: .13em solid $border;
         margin-bottom: 1em;
+        @include respond('laptop'){
+            height: 2em;
+            margin-bottom: 0em;
+        }
+
+        @include respond('desktop'){
+            height: 3em;
+            margin-bottom: 1em;
+        }
 
         &:focus {
             border-color: $red;

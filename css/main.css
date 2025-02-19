@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+form {
+  position: relative;
+  margin: 2em 0em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.6em;
+}
+@media (min-width: 64em) {
+  form {
+    margin: 1em 0em;
+  }
+}
+@media (min-width: 90em) {
+  form {
+    margin: 1em 0em;
+  }
+}
+form label {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+form .error-msg {
+  position: absolute;
+  top: -0.6em;
+  right: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+form .error-msg strong {
+  color: hsl(4, 100%, 67%);
+}
+form input {
+  width: 100%;
+  height: 3em;
+  padding: 1.7em 1.5em;
+  font-size: 16px;
+  border-radius: 0.5em;
+  border: 0.13em solid hsl(0, 0%, 87%);
+  margin-bottom: 1em;
+}
+form input:focus {
+  border-color: hsl(4, 100%, 67%);
+  outline: none !important;
+}
+form .hidden {
+  display: none;
+}
+form .errorInput {
+  color: hsl(4, 100%, 67%);
+  border-color: hsl(4, 100%, 67%);
+  background-color: hsla(4, 100%, 67%, 0.192);
+}
+
+.attribution {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1em 0em;
+}
+@media (min-width: 64em) {
+  .attribution {
+    color: hsl(0, 0%, 100%);
+  }
+}
+@media (min-width: 90em) {
+  .attribution {
+    color: hsl(0, 0%, 100%);
+  }
+}
+
+.attribution a {
+  color: hsl(4, 100%, 67%);
+}
+@media (min-width: 64em) {
+  .attribution a {
+    color: #ffb583;
+  }
+}
+@media (min-width: 90em) {
+  .attribution a {
+    color: #ffb583;
+  }
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  color: hsl(234, 29%, 20%);
+}
+@media (min-width: 64em) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+    height: 100vh;
+  }
+}
+@media (min-width: 90em) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(235, 18%, 26%);
+    height: 100vh;
+  }
+}
+body .container {
+  background-color: hsl(0, 0%, 100%);
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+@media (min-width: 64em) {
+  body .container {
+    width: 80%;
+    height: 88%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2em;
+    padding: 1.5em;
+  }
+}
+@media (min-width: 90em) {
+  body .container {
+    width: 64%;
+  }
+}
+body .container__image {
+  background-image: url("../assets/images/illustration-sign-up-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 17.5em;
+  width: 100%;
+  border-radius: 0 0 1em 1em;
+}
+@media (min-width: 64em) {
+  body .container__image {
+    background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+    height: 100%;
+    width: 45%;
+    border-radius: 1em;
+  }
+}
+@media (min-width: 90em) {
+  body .container__image {
+    background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+    height: 100%;
+    width: 45%;
+    border-radius: 1em;
+  }
+}
+body .container__text {
+  padding: 1.5em;
+}
+@media (min-width: 48em) {
+  body .container__text {
+    padding: 1.2em 3em;
+    width: 100%;
+  }
+}
+@media (min-width: 64em) {
+  body .container__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    margin: 4em 0em;
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 90em) {
+  body .container__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+    margin: 4em 0em;
+    padding: 1em 1.5em;
+  }
+}
+body .container__text h1 {
+  font-size: 4.1rem;
+  margin: 0.3em 0em;
+  font-weight: 700;
+}
+@media (min-width: 64em) {
+  body .container__text h1 {
+    font-size: 5rem;
+  }
+}
+@media (min-width: 90em) {
+  body .container__text h1 {
+    font-size: 5.2rem;
+  }
+}
+body .container__text p {
+  font-weight: 500;
+  padding: 0.6em 0em;
+  color: hsl(235, 18%, 26%);
+  line-height: 1.5em;
+}
+body .container__text ul {
+  list-style-type: none;
+  padding: 0.8em 0em;
+}
+body .container__text ul li {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1em;
+}
+body .container__text ul li .icon {
+  margin-top: 0.6em;
+}
+body .container__text ul li p {
+  padding: 0.4em 0em;
+}
+
+.container--success {
+  display: flex;
+  padding: 2em;
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.5em;
+  background-color: hsl(0, 0%, 100%);
+}
+@media (min-width: 48em) {
+  .container--success {
+    padding: 3em;
+    width: 80%;
+  }
+}
+@media (min-width: 64em) {
+  .container--success {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 75%;
+    width: 40%;
+    border-radius: 2em;
+    padding: 3em;
+  }
+}
+@media (min-width: 90em) {
+  .container--success {
+    width: 33%;
+  }
+}
+.container--success h1 {
+  font-size: 4.1rem;
+  margin: 0.3em 0em;
+  font-weight: 700;
+}
+@media (min-width: 64em) {
+  .container--success h1 {
+    font-size: 4.8rem;
+    margin: 0em;
+  }
+}
+@media (min-width: 90em) {
+  .container--success h1 {
+    font-size: 5.2rem;
+  }
+}
+.container--success p {
+  padding: 0.6em 0em;
+  color: hsl(235, 18%, 26%);
+  line-height: 1.5em;
+}
+.container--success button {
+  margin-top: 6em;
+}
+@media (min-width: 64em) {
+  .container--success button {
+    margin: 0;
+  }
+}
+@media (min-width: 90em) {
+  .container--success button {
+    margin: 0;
+  }
+}
+.container--success.hidden {
+  display: none;
+}
+
+button {
+  color: hsl(0, 0%, 100%);
+  height: 3.65em;
+  background: hsl(234, 29%, 20%);
+  font-family: "Roboto";
+  font-size: 16px;
+  width: 100%;
+  border-radius: 0.5em;
+  border-color: transparent;
+  cursor: pointer;
+}
+button:hover, button:active, button:focus {
+  background: linear-gradient(288deg, rgb(255, 106, 58) 0%, rgb(255, 62, 131) 100%);
+  filter: drop-shadow(0px 5px 15px rgba(255, 106, 58, 0.5)) drop-shadow(0px 5px 10px rgba(255, 62, 131, 0.5));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*# sourceMappingURL=main.css.map */

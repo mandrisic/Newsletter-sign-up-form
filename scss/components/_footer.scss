@@ -1,0 +1,19 @@
+@use '../util/mixins' as *;
+@use '../global/variables'as *;
+
+.attribution { 
+    font-size: 1.2rem; 
+    text-align: center; 
+    padding: 1em 0em;
+    @include respond('laptop', 'desktop'){
+        color: $white;
+    }
+}
+
+.attribution a { 
+    color: $red;
+    @include respond('laptop', 'desktop'){
+        color: #ffb583;
+    }
+    
+}

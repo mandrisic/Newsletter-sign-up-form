@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+// FONTS
+$font: 'Roboto';
+$font-regular: 400;
+$font-bold: 700;
+$font-size: 16px;
+
+// COLORS
+$red: hsl(4, 100%, 67%);
+$blue-800: hsl(234, 29%, 20%);
+$blue-700: hsl(235, 18%, 26%);
+$grey: hsl(0, 0%,58%);
+$border: hsl(0, 0%, 87%);
+$white: hsl(0, 0%, 100%);
+
+//BREAKPOINTS
+$breakpoints: (
+  "small": 20em,        // 320px
+  "tablet": 48em,       // 768px
+  "laptop": 64em,       // 1024px
+  "desktop": 90em       // 1440px
+);

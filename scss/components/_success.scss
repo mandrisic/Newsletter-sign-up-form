@@ -1,0 +1,55 @@
+@use '../global/variables' as *;
+@use '../util/mixins' as *;
+
+.container--success {
+    display: flex;
+    padding: 2em;
+    margin-top: 4em;
+    @include flexTemplate(column, center, flex-start);
+    gap: .5em;
+    background-color: $white;
+    @include respond('tablet'){
+        padding: 3em;
+        width: 80%;
+    }
+    @include respond('laptop'){
+        @include flexTemplate(column, space-between, flex-start);
+        height: 75%;
+        width: 40%;
+        border-radius: 2em;
+        padding: 3em;
+    }
+    @include respond('desktop'){
+        width: 33%;
+    }
+
+    h1 {
+        font-size: 4.1rem;
+        margin: .3em 0em;
+        font-weight: $font-bold;
+        @include respond('laptop'){
+            font-size: 4.8rem;
+            margin: 0em;
+        }
+        @include respond('desktop'){
+            font-size: 5.2rem;
+        }
+    }
+
+    p {
+        padding: .6em 0em;
+        color: $blue-700;
+        line-height: 1.5em;
+    }
+
+    button {
+        margin-top: 6em;
+        @include respond('laptop', 'desktop'){
+            margin: 0;
+        }
+    }
+
+    &.hidden {
+        display: none;
+    }
+}
